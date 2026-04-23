@@ -1,0 +1,11 @@
+# Instalar dependências
+npm install
+
+# Executar testes
+npm test
+
+# Build da imagem Docker
+docker build -t node-api-cicd .
+
+# Subir o container
+docker run -p 3000:3000 node-api-cicd
