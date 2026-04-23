@@ -52,12 +52,3 @@ Para o pipeline ganhar vida, configure no seu GitHub (`Settings > Secrets`):
 * `AWS_ACCESS_KEY_ID`: Seu identificador de acesso.
 * `AWS_SECRET_ACCESS_KEY`: Sua chave secreta.
 * `AWS_REGION`: Ex: `us-east-1`.
-
-### 3️⃣ Execução Local
-```bash
-# Clone o projeto
-git clone [https://github.com/SEU_USUARIO/REPOSITORIO.git](https://github.com/SEU_USUARIO/REPOSITORIO.git)
-
-# Build e Run via Docker
-docker build -t node-api-cicd .
-docker run -p 3000:3000 node-api-cicd
