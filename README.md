@@ -1,11 +1,5 @@
 # 🚀 Node.js Continuous Delivery: AWS & Docker Pipeline
 
-<p align="center">
-  <img src="https://img.shields.io/github/workflow/status/SEU_USUARIO/SEU_REPOSITORIO/deploy.yml?branch=main&style=for-the-badge&logo=github-actions&logoColor=white&label=Pipeline" />
-  <img src="https://img.shields.io/badge/AWS-ECR%20%26%20App%20Runner-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-</p>
-
 ## 📌 Visão Geral
 Este repositório não é apenas uma API, é a demonstração de um **ecossistema automatizado**. O foco aqui foi eliminar o "na minha máquina funciona", criando um fluxo onde cada linha de código é validada e distribuída na nuvem sem intervenção manual.
 
