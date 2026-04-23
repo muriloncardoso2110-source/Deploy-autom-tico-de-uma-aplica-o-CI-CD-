@@ -1,0 +1,38 @@
+Este projeto demonstra a implementação de um fluxo completo de Integração Contínua (CI) e Entrega Contínua (CD). A ideia aqui é garantir que cada alteração no código seja testada, empacotada em um container Docker e disponibilizada na AWS de forma automatizada.
+
+🏗 Arquitetura do Pipeline
+O fluxo de automação foi desenhado para seguir as boas práticas de DevOps:
+
+Testes Automatizados: Toda vez que um desenvolvedor faz um push para a branch main, o pipeline executa os testes unitários. Se algum falhar, o deploy é interrompido imediatamente.
+
+Build de Imagem Imutável: O pipeline gera uma imagem Docker utilizando o HASH do commit como tag. Isso evita o uso da tag :latest em produção, garantindo que saibamos exatamente qual versão do código está rodando.
+
+Segurança: Credenciais da AWS nunca ficam no código. Utilizamos GitHub Secrets e a action oficial da AWS para autenticação temporária.
+
+🛠 Tecnologias Utilizadas
+Runtime: Node.js 18.x
+
+Framework: Express
+
+Container: Docker (Multi-stage build)
+
+CI/CD: GitHub Actions
+
+Cloud: Amazon Web Services (AWS ECR/App Runner)
+
+🚀 Como replicar este projeto
+1. Pré-requisitos
+Docker instalado localmente.
+
+Conta ativa na AWS com um usuário IAM (permissão de acesso ao ECR).
+
+Repositório no GitHub.
+
+2. Configuração de Secrets
+No repositório do GitHub, vá em Settings > Secrets and variables > Actions e adicione as chaves:
+
+AWS_ACCESS_KEY_ID: Sua chave de acesso.
+
+AWS_SECRET_ACCESS_KEY: Sua chave secreta.
+
+AWS_REGION
