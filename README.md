@@ -5,9 +5,9 @@ Este repositório não é apenas uma API, é a demonstração de um **ecossistem
 
 ---
 
-## 🏗️ A Engenharia do Fluxo (CI/CD)
+## 🏗️ Fluxo (CI/CD)
 
-O pipeline foi estruturado sobre três pilares fundamentais da cultura DevOps:
+O pipeline foi estruturado sobre três pilares fundamentais:
 
 ### 1. Integridade (CI)
 * **Trigger:** Push na branch `main`.
